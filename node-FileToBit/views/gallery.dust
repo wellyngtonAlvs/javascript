@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>FileUpload - Teste</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  </head>
+
+  <body>
+    <div>
+        <div class="container">
+
+        {#files}
+        <div class="col-lg-6 col-md-6 col-sm-12" style="margin-bottom: 10px;">
+          <div id="divEmbalagem{id}" class="card text-white bg-secondary">
+            <div class="card-header">{fileName}</div>
+            <div class="card-body">
+              <div class="row">
+                <img src="temp/{fileName}" alt="" width="100%" heigh="150"/>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/files}
+
+        </div>
+    </div>
+
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+  </body>
+</html>
